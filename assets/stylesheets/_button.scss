@@ -1,0 +1,12 @@
+.gold-btn {
+    padding: 1% 2%;
+    border: 1px solid $gold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $gold;
+
+    &:link, &:hover, &:active, &:focus, &:visited {
+        color: $gold;
+        text-decoration: none;
+    }
+}

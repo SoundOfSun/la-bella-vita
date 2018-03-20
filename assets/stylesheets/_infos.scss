@@ -1,0 +1,30 @@
+section#infos {
+    background-color: $white;
+    width: 75%;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: -3%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 50% 50%;
+
+    div {
+        border: 2px solid red;
+    }
+}
+
+.reservations {
+    text-align: center;
+    padding: 12%;
+
+    .resa-title {
+        color: $d-grey;
+        font-family: $logo-font;
+        margin-bottom: 7%;
+    }
+
+    .resa-txt {
+        color: $l-grey;
+        margin-bottom: 10%;
+    }
+}

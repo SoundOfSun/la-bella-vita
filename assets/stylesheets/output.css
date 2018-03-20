@@ -25,6 +25,39 @@ section#banner {
     font-weight: 700;
     font-size: 4vw; }
 
+.gold-btn {
+  padding: 1% 2%;
+  border: 1px solid #b2997a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b2997a; }
+  .gold-btn:link, .gold-btn:hover, .gold-btn:active, .gold-btn:focus, .gold-btn:visited {
+    color: #b2997a;
+    text-decoration: none; }
+
+section#infos {
+  background-color: white;
+  width: 75%;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: -3%;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 50% 50%; }
+  section#infos div {
+    border: 2px solid red; }
+
+.reservations {
+  text-align: center;
+  padding: 12%; }
+  .reservations .resa-title {
+    color: #323232;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 7%; }
+  .reservations .resa-txt {
+    color: #969696;
+    margin-bottom: 10%; }
+
 nav {
   width: 100%;
   justify-content: space-between;
@@ -67,12 +100,13 @@ nav {
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #f6f4f1; }
 
 .flex {
   display: flex; }
 
 p, ul, li {
-  margin: 0 !important; }
+  margin: 0; }
 
 /*# sourceMappingURL=output.css.map */
