@@ -12,21 +12,42 @@
 
             <!-- Imports -->
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
             <!-- Linked files -->
             <link rel="stylesheet" href="assets/stylesheets/output.css">
         </head>
 
         <body>
-            <section class="banner">
+            <section id="banner">
                 <nav class="flex">
-                    <div id="menu-logo"></div>
-                    <div id="menu-links"></div>
+                    <div id="menu-logo">
+                        <p><i class="fas fa-utensils"></i>la bella vita</p>
+                    </div>
+                    <div id="menu-links">
+                        <ul class="list-inline">
+                            <li class="menu-link list-inline-item"><a href="#">shop</a> <span class="grey">•</span></li>
+                            <li class="menu-link list-inline-item"><a href="#">recipes</a> <span class="grey">•</span></li>
+                            <li class="menu-link list-inline-item"><a href="#">news</a> <span class="grey">•</span></li>
+                            <li class="menu-link list-inline-item"><a href="#">about la bella vita</a> <span class="grey">•</span></li>
+                            <li class="menu-link list-inline-item"><a href="#">contact</a> <span class="grey">•</span></li>
+                            <li id="translations" class="list-inline-item">EN <i class="fas fa-chevron-down"></i></li>
+                        </ul>
+                    </div>
                 </nav>
+                <div class="banner-content">
+                    <h1 class="restau-name">la bella vita</h1>
+                    <h2 class="restau-type">italian specialities</h2>
+                </div>
             </section>
-            <section class="infos"></section>
-            <section class="specialities"></section>
-            <section class="specialities-grid"></section>
-            <section class="menu"></section>
+            <section id="infos"></section>
+            <section id="specialities"></section>
+            <section id="specialities-grid"></section>
+            <section id="menu"></section>
+
+            <!-- Boostrap Javascript -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         </body>
 </html>

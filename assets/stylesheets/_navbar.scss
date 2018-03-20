@@ -1,0 +1,55 @@
+nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+#menu-logo {
+    color: $white;
+    width: 22%;
+
+    p {
+        font-family: $logo-font;
+        font-size: 3vw;
+        text-transform: capitalize;
+
+        i {
+            font-size: 2.5vw;
+            margin-right: 10%;
+        }
+    }
+}
+
+#menu-links {
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: right;
+
+    #translations {
+        color: $l-grey;
+    }
+}
+
+.menu-link {
+    display: inline;
+    font-family: $menu-font;
+    font-weight: 700;
+
+    a {
+        color: $white;
+
+        &:link, &:hover, &:focus, &:active, &:visited {
+            text-decoration: none;
+        }
+    
+        &:hover {
+            color: $gold;
+        }        
+    }
+
+    .grey {
+        color: $l-grey; 
+        margin: 0 1%;
+    }
+}
