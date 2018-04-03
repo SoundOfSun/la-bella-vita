@@ -1,0 +1,48 @@
+section#specialities-grid {
+    height: 40vw;
+
+    div {
+        border: 1px solid red;
+    }
+}
+
+.spec-content {
+    background-color: $white;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: -3%;
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.dish {
+    text-align: center;
+    padding: 6%;
+
+    h3 {
+        color: $d-grey;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 1.6vw;
+    }
+
+    p {
+        color: $l-grey;
+        font-size: 1vw;
+    }
+}
+
+.pic-1 {
+    background-image: url('../images/lasagna.jpg');
+}
+.pic-2 {
+    background-image: url('../images/baricole.jpg');
+}
+.pic-3 {
+    background-image: url('../images/eggplant-parmigiana.jpg');
+}
+.pic-4 {
+    background-image: url('../images/spaghetti-meatballs.jpg');
+}
