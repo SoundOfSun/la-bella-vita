@@ -1,30 +1,53 @@
 section#infos {
+    height: 40vw;
+}
+
+.infos-content {
     background-color: $white;
     width: 75%;
-    height: 700px;
+    height: 100%;
     margin: 0 auto;
     margin-top: -3%;
     display: grid;
     grid-template-columns: 30% 1fr;
     grid-template-rows: 50% 50%;
+}
 
-    div {
-        border: 2px solid red;
+.reservations, .about {
+    text-align: center;
+
+    .infos-title {
+        color: $d-grey;
+        font-family: $logo-font;
+        margin-bottom: 5%;
+        font-size: 3.5vw;
+    }
+
+    .infos-txt {
+        color: $l-grey;
+        margin-bottom: 15%;
+        font-size: 1vw;
     }
 }
 
 .reservations {
-    text-align: center;
-    padding: 12%;
+    padding: 10%;
+}
 
-    .resa-title {
-        color: $d-grey;
-        font-family: $logo-font;
-        margin-bottom: 7%;
-    }
+.about {
+    padding: 3% 8%;
+}
 
-    .resa-txt {
-        color: $l-grey;
-        margin-bottom: 10%;
-    }
+.infos-pic-1, .infos-pic-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.infos-pic-1 {
+    background-image: url('../images/outside.jpg');
+}
+
+.infos-pic-2 {
+    background-image: url('../images/inside.jpg');
 }

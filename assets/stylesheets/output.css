@@ -26,37 +26,60 @@ section#banner {
     font-size: 4vw; }
 
 .gold-btn {
-  padding: 1% 2%;
+  padding: 4% 6%;
   border: 1px solid #b2997a;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #b2997a; }
+  color: #b2997a;
+  background-color: transparent; }
   .gold-btn:link, .gold-btn:hover, .gold-btn:active, .gold-btn:focus, .gold-btn:visited {
     color: #b2997a;
     text-decoration: none; }
+  .gold-btn:hover {
+    background-color: #b2997a;
+    color: white; }
 
 section#infos {
+  height: 40vw; }
+
+.infos-content {
   background-color: white;
   width: 75%;
-  height: 700px;
+  height: 100%;
   margin: 0 auto;
   margin-top: -3%;
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: 50% 50%; }
-  section#infos div {
-    border: 2px solid red; }
 
-.reservations {
-  text-align: center;
-  padding: 12%; }
-  .reservations .resa-title {
+.reservations, .about {
+  text-align: center; }
+  .reservations .infos-title, .about .infos-title {
     color: #323232;
     font-family: "Dancing Script", cursive;
-    margin-bottom: 7%; }
-  .reservations .resa-txt {
+    margin-bottom: 5%;
+    font-size: 3.5vw; }
+  .reservations .infos-txt, .about .infos-txt {
     color: #969696;
-    margin-bottom: 10%; }
+    margin-bottom: 15%;
+    font-size: 1vw; }
+
+.reservations {
+  padding: 10%; }
+
+.about {
+  padding: 3% 8%; }
+
+.infos-pic-1, .infos-pic-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.infos-pic-1 {
+  background-image: url("../images/outside.jpg"); }
+
+.infos-pic-2 {
+  background-image: url("../images/inside.jpg"); }
 
 nav {
   width: 100%;
