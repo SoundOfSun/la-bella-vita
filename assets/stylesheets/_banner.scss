@@ -4,8 +4,18 @@ section#banner {
 }
 
 section#specialities {
-    min-height: 45vw;
+    height: 45vw;
     background-image: linear-gradient(-225deg, rgba(120,120,120,0.6) 0%, rgba(50,50,50,0.6) 50%), url('../images/specialities.jpg');
+    margin-top: -3%;
+    text-align: center;
+    color: $white;
+
+    .spec-title {
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .banner-content {
@@ -22,11 +32,11 @@ section#specialities {
         text-transform: capitalize;
         font-size: 9vw;
     }
+}
 
-    .restau-type {
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        font-weight: 700;
-        font-size: 4vw;
-    }
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 4vw;       
 }
