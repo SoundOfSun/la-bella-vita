@@ -98,6 +98,61 @@ section#infos {
 .infos-pic-2 {
   background-image: url("../images/inside.jpg"); }
 
+section#menu {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: white; }
+
+#pizza {
+  position: absolute;
+  left: -20%;
+  top: 20%;
+  height: 35vw; }
+
+#pasta-dish {
+  position: absolute;
+  right: -15%;
+  height: 30vw; }
+
+#pasta-raw {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  height: 24vw; }
+
+.menu-content {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 8%; }
+  .menu-content .menu-title {
+    text-align: center; }
+  .menu-content .menu-title .menu-border {
+    display: inline-block;
+    border-bottom: 1px solid #b2997a;
+    margin-bottom: 5%; }
+  .menu-content .menu-border h2 {
+    text-transform: capitalize;
+    color: #323232;
+    font-family: "Dancing Script", cursive;
+    font-size: 5vw; }
+  .menu-content .menu-cat {
+    text-align: center;
+    text-transform: uppercase;
+    color: #969696;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+    font-size: 2vw;
+    font-weight: 700; }
+
+.food, .desserts {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
+.el {
+  flex: 0 0 50%; }
+
 nav {
   width: 100%;
   justify-content: space-between;
