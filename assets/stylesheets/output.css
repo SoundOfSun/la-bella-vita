@@ -21,6 +21,11 @@ section#specialities {
     justify-content: space-around;
     align-items: center; }
 
+section#meal-pic {
+  height: 40vw;
+  background-image: url("../images/meal-table.jpg");
+  margin-top: -3%; }
+
 .banner-content {
   text-align: center;
   position: absolute;
