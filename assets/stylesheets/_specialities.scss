@@ -1,9 +1,5 @@
 section#specialities-grid {
     height: 40vw;
-
-    div {
-        border: 1px solid red;
-    }
 }
 
 .spec-content {
@@ -13,24 +9,35 @@ section#specialities-grid {
     margin: 0 auto;
     margin-top: -3%;
     display: grid;
-    grid-template-columns: 25% 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
 }
 
 .dish {
     text-align: center;
     padding: 6%;
+    background-color: $white;
 
     h3 {
         color: $d-grey;
         letter-spacing: 2px;
         text-transform: uppercase;
+        font-weight: 700;
         font-size: 1.6vw;
+        margin: 12% 0;
     }
 
     p {
         color: $l-grey;
         font-size: 1vw;
+    }
+
+    .dish-price {
+        text-transform: uppercase;
+        color: $gold;
+        font-weight: 700;
+        margin-top: 17%;
+        font-size: 1.3vw;
     }
 }
 

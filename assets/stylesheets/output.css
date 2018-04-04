@@ -44,6 +44,7 @@ section#specialities {
   padding: 4% 6%;
   border: 1px solid #b2997a;
   text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #b2997a;
   background-color: transparent; }
@@ -132,8 +133,6 @@ nav {
 
 section#specialities-grid {
   height: 40vw; }
-  section#specialities-grid div {
-    border: 1px solid red; }
 
 .spec-content {
   background-color: white;
@@ -142,20 +141,29 @@ section#specialities-grid {
   margin: 0 auto;
   margin-top: -3%;
   display: grid;
-  grid-template-columns: 25% 1fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%; }
 
 .dish {
   text-align: center;
-  padding: 6%; }
+  padding: 6%;
+  background-color: white; }
   .dish h3 {
     color: #323232;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 1.6vw; }
+    font-weight: 700;
+    font-size: 1.6vw;
+    margin: 12% 0; }
   .dish p {
     color: #969696;
     font-size: 1vw; }
+  .dish .dish-price {
+    text-transform: uppercase;
+    color: #b2997a;
+    font-weight: 700;
+    margin-top: 17%;
+    font-size: 1.3vw; }
 
 .pic-1 {
   background-image: url("../images/lasagna.jpg"); }
