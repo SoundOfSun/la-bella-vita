@@ -25,8 +25,7 @@ section#menu {
 
 .menu-content {
     width: 65%;
-    margin: 0 auto;
-    margin-top: 8%;
+    margin: 8% auto;
 
     .menu-title {
         text-align: center;
@@ -62,6 +61,34 @@ section#menu {
     align-items: stretch;
 }
 
+.food {
+    margin-bottom: 5%;
+}
+
 .el {
     flex:0 0 50%;
+    padding: 2%;
+    align-items: center;
+    margin-bottom: 4%;
+
+    .dish-name {
+        color: $d-grey;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.5vw;
+        font-weight: 700;
+    }
+
+    .dish-desc {
+        color: $l-grey;
+        font-size: 1vw;
+    }
+
+    .dish-price {
+        font-family: $logo-font;
+        color: $gold;
+        font-size: 2.5vw;
+        font-weight: 700;
+        padding-top: 7%;
+    }
 }

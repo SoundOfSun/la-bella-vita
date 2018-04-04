@@ -123,8 +123,7 @@ section#menu {
 
 .menu-content {
   width: 65%;
-  margin: 0 auto;
-  margin-top: 8%; }
+  margin: 8% auto; }
   .menu-content .menu-title {
     text-align: center; }
   .menu-content .menu-title .menu-border {
@@ -150,8 +149,29 @@ section#menu {
   flex-wrap: wrap;
   align-items: stretch; }
 
+.food {
+  margin-bottom: 5%; }
+
 .el {
-  flex: 0 0 50%; }
+  flex: 0 0 50%;
+  padding: 2%;
+  align-items: center;
+  margin-bottom: 4%; }
+  .el .dish-name {
+    color: #323232;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+    font-weight: 700; }
+  .el .dish-desc {
+    color: #969696;
+    font-size: 1vw; }
+  .el .dish-price {
+    font-family: "Dancing Script", cursive;
+    color: #b2997a;
+    font-size: 2.5vw;
+    font-weight: 700;
+    padding-top: 7%; }
 
 nav {
   width: 100%;
