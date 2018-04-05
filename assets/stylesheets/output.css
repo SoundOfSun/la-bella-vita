@@ -53,7 +53,8 @@ section#meal-pic {
   letter-spacing: 1px;
   color: #b2997a;
   background-color: transparent;
-  transition: all 0.5s ease 0s; }
+  transition: all 0.5s ease 0s;
+  font-size: 1.3vw; }
   .gold-btn:link, .gold-btn:hover, .gold-btn:active, .gold-btn:focus, .gold-btn:visited {
     color: #b2997a;
     text-decoration: none; }
@@ -204,7 +205,8 @@ nav {
   font-weight: 700; }
   .menu-link a {
     color: white;
-    transition: color 0.5s ease 0s; }
+    transition: color 0.5s ease 0s;
+    font-size: 1.5vw; }
     .menu-link a:link, .menu-link a:hover, .menu-link a:focus, .menu-link a:active, .menu-link a:visited {
       text-decoration: none; }
     .menu-link a:hover {
@@ -235,7 +237,7 @@ section#specialities-grid {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     margin: 12% 0; }
   .dish p {
     color: #969696;
