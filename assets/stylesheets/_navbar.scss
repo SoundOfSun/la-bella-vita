@@ -38,6 +38,7 @@ nav {
 
     a {
         color: $white;
+        transition: color 0.5s ease 0s;
 
         &:link, &:hover, &:focus, &:active, &:visited {
             text-decoration: none;

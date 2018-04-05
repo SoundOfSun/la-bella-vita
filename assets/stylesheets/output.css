@@ -52,7 +52,8 @@ section#meal-pic {
   font-weight: 500;
   letter-spacing: 1px;
   color: #b2997a;
-  background-color: transparent; }
+  background-color: transparent;
+  transition: all 0.5s ease 0s; }
   .gold-btn:link, .gold-btn:hover, .gold-btn:active, .gold-btn:focus, .gold-btn:visited {
     color: #b2997a;
     text-decoration: none; }
@@ -202,7 +203,8 @@ nav {
   font-family: "Istok Web", sans-serif;
   font-weight: 700; }
   .menu-link a {
-    color: white; }
+    color: white;
+    transition: color 0.5s ease 0s; }
     .menu-link a:link, .menu-link a:hover, .menu-link a:focus, .menu-link a:active, .menu-link a:visited {
       text-decoration: none; }
     .menu-link a:hover {
