@@ -92,3 +92,47 @@ section#menu {
         padding-top: 7%;
     }
 }
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #pasta-raw {
+        bottom: 18%;
+    }
+
+    #pizza {
+        top: 25%;
+    }
+
+    .menu-content {
+        margin-bottom: 30%;
+
+        .menu-title, .menu-border {
+            margin-bottom: 10%;
+        }
+
+        .menu-title h2 {
+            font-size: 3rem;
+        }
+
+        .menu-cat {
+            font-size: 1rem;
+            margin: 14% 0;
+        }
+    }
+
+    .food, .desserts {
+        display: block !important;
+    }
+
+    .el {
+        .dish-name {
+            font-size: 0.8rem;
+        }
+        .dish-desc {
+            font-size: 0.7rem;
+        }
+        .dish-price {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -21,6 +21,10 @@ nav {
     }
 }
 
+#menu-mob {
+    display: none;
+}
+
 #menu-links {
     text-transform: uppercase;
     flex-grow: 1;
@@ -54,4 +58,21 @@ nav {
         color: $l-grey; 
         margin: 0 1%;
     }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .menu-link, #menu-logo {
+       display: none;
+   }
+
+   .menu-mob {
+       display: block;
+       margin-left: 2%;
+       margin-top: 2%;
+   }
+
+   #translations {
+       margin-right: 2%;
+   }
 }

@@ -45,6 +45,45 @@ section#meal-pic {
   font-weight: 700;
   font-size: 4vw; }
 
+.menu-mob {
+  display: none; }
+
+.down-btn-mob {
+  display: none; }
+
+/* Tablet (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section#banner {
+    min-height: 80vh; } }
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .banner-content .restau-name {
+    font-size: 3rem; }
+  .banner-content .subtitle {
+    font-size: 1.5rem; }
+
+  .menu-mob {
+    display: block; }
+
+  .down-btn-mob {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    color: white; }
+    .down-btn-mob p {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 500; }
+
+  section#specialities {
+    height: 230px; }
+    section#specialities .subtitle {
+      font-size: 1.8rem; }
+
+  section#meal-pic {
+    height: 200px; } }
 .gold-btn {
   padding: 4% 6%;
   border: 1px solid #b2997a;
@@ -62,6 +101,35 @@ section#meal-pic {
     background-color: #b2997a;
     color: white; }
 
+#mob-footer {
+  display: none; }
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #mob-footer {
+    display: block;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -5px 5px -5px #323232; }
+    #mob-footer #footer-links {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    #mob-footer .footer-link {
+      color: #323232;
+      text-align: center; }
+      #mob-footer .footer-link i {
+        font-size: 1.3rem; }
+      #mob-footer .footer-link p {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem; } }
 section#infos {
   height: 40vw; }
 
@@ -98,8 +166,51 @@ section#infos {
   background-image: url("../images/outside.jpg"); }
 
 .infos-pic-2 {
-  background-image: url("../images/inside.jpg"); }
+  background-image: url("../images/inside.jpg");
+  display: block; }
 
+/* Tablet (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section#infos {
+    height: 60vw; }
+
+  .infos-txt {
+    font-size: 1.5vw; } }
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section#infos {
+    height: auto; }
+
+  .infos-content {
+    display: block;
+    width: 90%; }
+
+  .reservations, .infos-pic-1, .about {
+    width: 100%; }
+
+  .infos-pic-1 {
+    height: 200px; }
+
+  .infos-pic-2 {
+    display: none; }
+
+  .reservations {
+    padding: 2%;
+    height: 230px; }
+    .reservations .gold-btn {
+      font-size: 1rem; }
+    .reservations .infos-txt {
+      margin-bottom: 10%; }
+
+  .infos-title {
+    font-size: 2rem !important; }
+
+  .infos-txt {
+    font-size: 1rem !important; }
+
+  .about {
+    padding: 5%;
+    height: 450px; } }
 section#menu {
   position: relative;
   width: 100%;
@@ -175,6 +286,33 @@ section#menu {
     font-weight: 700;
     padding-top: 7%; }
 
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #pasta-raw {
+    bottom: 18%; }
+
+  #pizza {
+    top: 25%; }
+
+  .menu-content {
+    margin-bottom: 30%; }
+    .menu-content .menu-title, .menu-content .menu-border {
+      margin-bottom: 10%; }
+    .menu-content .menu-title h2 {
+      font-size: 3rem; }
+    .menu-content .menu-cat {
+      font-size: 1rem;
+      margin: 14% 0; }
+
+  .food, .desserts {
+    display: block !important; }
+
+  .el .dish-name {
+    font-size: 0.8rem; }
+  .el .dish-desc {
+    font-size: 0.7rem; }
+  .el .dish-price {
+    font-size: 1.3rem; } }
 nav {
   width: 100%;
   justify-content: space-between;
@@ -191,6 +329,9 @@ nav {
     #menu-logo p i {
       font-size: 2.5vw;
       margin-right: 10%; }
+
+#menu-mob {
+  display: none; }
 
 #menu-links {
   text-transform: uppercase;
@@ -215,6 +356,18 @@ nav {
     color: #969696;
     margin: 0 1%; }
 
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .menu-link, #menu-logo {
+    display: none; }
+
+  .menu-mob {
+    display: block;
+    margin-left: 2%;
+    margin-top: 2%; }
+
+  #translations {
+    margin-right: 2%; } }
 section#specialities-grid {
   height: 40vw; }
 
@@ -261,6 +414,44 @@ section#specialities-grid {
 .pic-4 {
   background-image: url("../images/spaghetti-meatballs.jpg"); }
 
+/* Tablet (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section#specialities-grid {
+    height: 50vw; }
+
+  .dish p {
+    font-size: 1.5vw; } }
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section#specialities-grid {
+    height: auto; }
+    section#specialities-grid div.dish:nth-child(1) {
+      border-bottom: 1px solid #969696;
+      border-right: 1px solid #969696; }
+    section#specialities-grid div.dish:nth-child(6) {
+      border-right: 1px solid #969696; }
+    section#specialities-grid div.dish:nth-child(3) {
+      border-bottom: 1px solid #969696; }
+
+  .spec-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 90%; }
+    .spec-content .pic-1, .spec-content .pic-2, .spec-content .pic-3, .spec-content .pic-4 {
+      display: none; }
+
+  .dish {
+    flex-basis: 50%;
+    padding: 2%; }
+    .dish .spec-title {
+      font-size: 0.8rem;
+      margin: 5% 0; }
+    .dish p {
+      font-size: 0.8rem; }
+    .dish .dish-price {
+      font-size: 1rem;
+      margin-top: 7%; } }
 * {
   box-sizing: border-box; }
 

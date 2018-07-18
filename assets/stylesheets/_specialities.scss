@@ -53,3 +53,64 @@ section#specialities-grid {
 .pic-4 {
     background-image: url('../images/spaghetti-meatballs.jpg');
 }
+
+/* Tablet (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    section#specialities-grid {
+        height: 50vw;
+    }
+
+    .dish p {
+        font-size: 1.5vw;
+    }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    section#specialities-grid {
+        height: auto;
+
+        div.dish:nth-child(1) {
+            border-bottom: 1px solid $l-grey;
+            border-right: 1px solid $l-grey;
+        }
+
+        div.dish:nth-child(6) {
+            border-right: 1px solid $l-grey;
+        }
+
+        div.dish:nth-child(3) {
+            border-bottom: 1px solid $l-grey;
+        }
+    }
+
+    .spec-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 90%;
+
+        .pic-1, .pic-2, .pic-3, .pic-4 {
+            display: none;
+        }
+    }
+
+    .dish {
+        flex-basis: 50%;
+        padding: 2%;
+
+        .spec-title {
+            font-size: 0.8rem;
+            margin: 5% 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        .dish-price {
+            font-size: 1rem;
+            margin-top: 7%;
+        }
+    }
+}

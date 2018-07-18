@@ -45,4 +45,65 @@ section#infos {
 
 .infos-pic-2 {
     background-image: url('../images/inside.jpg');
+    display: block;
+}
+
+/* Tablet (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    section#infos {
+        height: 60vw;
+    }
+
+    .infos-txt {
+        font-size: 1.5vw;
+    }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    section#infos {
+        height: auto;
+    }
+    .infos-content {
+        display: block;
+        width: 90%;
+    }
+
+    .reservations, .infos-pic-1, .about {
+        width: 100%;
+    }
+
+    .infos-pic-1 {
+        height: 200px;
+    }
+
+    .infos-pic-2 {
+        display: none;
+    }
+
+    .reservations {
+        padding: 2%;
+        height: 230px;
+
+        .gold-btn {
+            font-size: 1rem;
+        }
+
+        .infos-txt {
+            margin-bottom: 10%;
+        }
+    }
+
+    .infos-title {
+        font-size: 2rem !important;
+    }
+
+    .infos-txt {
+        font-size: 1rem !important;
+    }
+
+    .about {
+        padding: 5%;
+        height: 450px;
+    }
 }
