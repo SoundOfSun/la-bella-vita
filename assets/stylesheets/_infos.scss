@@ -54,8 +54,17 @@ section#infos {
         height: 60vw;
     }
 
-    .infos-txt {
+    .infos-content {
+        width: 90%;
+    }
+
+    .reservations .infos-txt,
+    .about .infos-txt {
         font-size: 1.5vw;
+    }
+
+    .reservations {
+        padding: 12%;
     }
 }
 

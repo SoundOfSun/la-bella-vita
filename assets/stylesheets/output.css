@@ -101,6 +101,10 @@ section#meal-pic {
     background-color: #b2997a;
     color: white; }
 
+/* Tablet (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .gold-btn {
+    font-size: 0.8rem; } }
 #mob-footer {
   display: none; }
 
@@ -174,8 +178,15 @@ section#infos {
   section#infos {
     height: 60vw; }
 
-  .infos-txt {
-    font-size: 1.5vw; } }
+  .infos-content {
+    width: 90%; }
+
+  .reservations .infos-txt,
+  .about .infos-txt {
+    font-size: 1.5vw; }
+
+  .reservations {
+    padding: 12%; } }
 /* Smartphones (portrait and landscape) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   section#infos {
@@ -418,6 +429,9 @@ section#specialities-grid {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   section#specialities-grid {
     height: 50vw; }
+
+  .spec-content {
+    width: 90%; }
 
   .dish p {
     font-size: 1.5vw; } }
