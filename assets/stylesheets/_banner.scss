@@ -1,10 +1,11 @@
 section#banner {
-    min-height: 100vh;
+    position: relative;
+    min-height: 1100px;
     background-image: linear-gradient(-225deg, rgba(120,120,120,0.6) 0%, rgba(50,50,50,0.6) 50%), url('../images/banner.jpeg');
 }
 
 section#specialities {
-    height: 40vw;
+    height: 735px;
     background-image: linear-gradient(-225deg, rgba(120,120,120,0.6) 0%, rgba(50,50,50,0.6) 50%), url('../images/specialities.jpg');
     margin-top: -3%;
     text-align: center;
@@ -19,7 +20,7 @@ section#specialities {
 }
 
 section#meal-pic {
-    height: 40vw;
+    height: 735px;
     background-image: url('../images/meal-table.jpg');
     margin-top: -3%;
 }
@@ -36,7 +37,7 @@ section#meal-pic {
     .restau-name {
         font-family: $logo-font;
         text-transform: capitalize;
-        font-size: 9vw;
+        font-size: 170px;
     }
 }
 
@@ -44,7 +45,7 @@ section#meal-pic {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-weight: 700;
-    font-size: 4vw;       
+    font-size: 70px;       
 }
 
 .menu-mob {
@@ -55,6 +56,20 @@ section#meal-pic {
     display: none;
 }
 
+/* Scaling tablet / desktop : between 480px and 1800px */
+@media (min-width: 601px) and (max-width: 1800px) {
+    .banner-content .restau-name { font-size: 9vw; }
+    .subtitle { font-size: 4vw; }
+}
+
+/* Scaling mobile : between 320px and 600px */
+@media (min-width: 320px) and (max-width: 600px) {
+    section#banner { 
+        min-height: 530px; 
+        position: relative;
+    }
+}
+
 /* Tablet (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     section#banner {
@@ -63,7 +78,7 @@ section#meal-pic {
 }
 
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
     .banner-content {
         .restau-name {
             font-size: 3rem;

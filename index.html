@@ -14,210 +14,215 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+            <!-- Sass command (navigate inside the stylesheets folder) : -->
+            <!-- sass --watch main.scss:output.css -->
+            
             <!-- Linked files -->
             <link rel="stylesheet" href="assets/stylesheets/output.css">
         </head>
 
         <body>
-            <section id="banner" class="bg-pic">
-                <nav class="flex">
-                    <div id="menu-logo">
-                        <p><i class="fas fa-utensils"></i>la bella vita</p>
+            <div class="content-wrapper">
+                <section id="banner" class="bg-pic">
+                    <nav class="flex">
+                        <div id="menu-logo">
+                            <p><i class="fas fa-utensils"></i>la bella vita</p>
+                        </div>
+                        <div class="menu-mob">
+                            <i class="fas fa-bars" style="color: white; font-size: 1.5rem"></i>
+                        </div>
+                        <div id="menu-links">
+                            <ul class="list-inline">
+                                <li class="menu-link list-inline-item"><a href="#">shop</a> <span class="grey">•</span></li>
+                                <li class="menu-link list-inline-item"><a href="#">recipes</a> <span class="grey">•</span></li>
+                                <li class="menu-link list-inline-item"><a href="#">news</a> <span class="grey">•</span></li>
+                                <li class="menu-link list-inline-item"><a href="#">about la bella vita</a> <span class="grey">•</span></li>
+                                <li class="menu-link list-inline-item"><a href="#">contact</a> <span class="grey">•</span></li>
+                                <li id="translations" class="list-inline-item">EN <i class="fas fa-chevron-down"></i></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="banner-content">
+                        <h1 class="restau-name">la bella vita</h1>
+                        <h2 class="subtitle">italian specialities</h2>
                     </div>
-                    <div class="menu-mob">
-                        <i class="fas fa-bars" style="color: white; font-size: 1.5rem"></i>
+                    <div class="down-btn-mob">
+                        <p>down</p>
+                        <i class="fas fa-angle-down"></i>
                     </div>
-                    <div id="menu-links">
-                        <ul class="list-inline">
-                            <li class="menu-link list-inline-item"><a href="#">shop</a> <span class="grey">•</span></li>
-                            <li class="menu-link list-inline-item"><a href="#">recipes</a> <span class="grey">•</span></li>
-                            <li class="menu-link list-inline-item"><a href="#">news</a> <span class="grey">•</span></li>
-                            <li class="menu-link list-inline-item"><a href="#">about la bella vita</a> <span class="grey">•</span></li>
-                            <li class="menu-link list-inline-item"><a href="#">contact</a> <span class="grey">•</span></li>
-                            <li id="translations" class="list-inline-item">EN <i class="fas fa-chevron-down"></i></li>
-                        </ul>
+                </section>
+                <section id="infos">
+                    <div class="infos-content">
+                        <div class="reservations">
+                            <h3 class="infos-title">Reservations</h3>
+                            <p class="infos-txt">Call us now to book a table in our restaurant. Calls must be in the same day as reservation.</p>
+                            <a href="" class="gold-btn">book a table</a>
+                        </div>
+                        <div class="infos-pic-1 bg-pic"></div>
+                        <div class="infos-pic-2 bg-pic"></div>
+                        <div class="about">
+                            <h3 class="infos-title">About</h3>
+                            <p class="infos-txt">
+                                <strong>La Bella Vita</strong> is a fictitious restaurant I am creating here as a front-end personal practice. I chose the name in honour of these 3 years I learnt Italian in high-school with my brilliant teacher. It is also a reference to a very odd italian movie I invite you to check out someday.<br>
+                                This page has been created following the work of <strong>designer Virgil Pana</strong>. Please go look at his work on <a href="https://dribbble.com/shots/2052368-Faicco-s-Italian-Restaurant-Parallax" target="_blank">Dribble</a>. My name is <strong>Cecile</strong>, and I am front-end developer in London. If you like this page, please take a look at my projects on <a href="https://github.com/SoundOfSun?tab=repositories" target="_blank">Github</a>.
+                            </p>
+                        </div>                    
+                    </div>
+                </section>
+                <section id="specialities"  class="bg-pic">
+                    <div class="flex spec-title">
+                        <h2 class="subtitle">our specialities</h2>                   
+                    </div>
+                </section>
+                <section id="specialities-grid">
+                    <div class="spec-content">
+                        <div class="dish">
+                            <h3 class="spec-title">lasagna</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
+                            <p class="dish-price">from £15.40</p>
+                        </div>
+                        <div class="pic-2 bg-pic"></div>
+                        <div class="dish">
+                            <h3 class="spec-title">baricole</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
+                            <p class="dish-price">from £15.40</p>
+                        </div>
+                        <div class="pic-4 bg-pic"></div>
+                        <div class="pic-1 bg-pic"></div>
+                        <div class="dish">
+                            <h3 class="spec-title">eggplant<br> parmigiana</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
+                            <p class="dish-price">from £15.40</p>
+                        </div>
+                        <div class="pic-3 bg-pic"></div>
+                        <div class="dish">
+                            <h3 class="spec-title">spaghetti with<br> meatballs</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
+                            <p class="dish-price">from £15.40</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="meal-pic" class="bg-pic"></section>
+                <section id="menu">
+                    <img src="assets/images/pizza.png" alt="pizza" id="pizza">
+                    <img src="assets/images/pasta-dish.png" alt="pasta dish" id="pasta-dish">
+                    <img src="assets/images/pasta-raw.png" alt="pasta raw" id="pasta-raw">
+                    <div class="menu-content">
+                        <div class="menu-title">
+                            <div class="menu-border">
+                                <h2>menu</h2>                           
+                            </div>
+                        </div>
+                        <h3 class="menu-cat">food & aperitives</h3>
+                        <div class="food flex">
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">pizza mexicana</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>                                
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">lasagna</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>                               
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">pizza quatro stagioni</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">lasagna napolitana</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">pizza quatro formagi</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">other lasagna</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">pizza carnivora</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                        </div>
+                        <h3 class="menu-cat">desserts</h3>
+                        <div class="desserts flex">
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">tiramisu</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">cannoli</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">pizelles</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">double choco biscotti</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el flex">
+                                <div>
+                                    <h4 class="dish-name">sicilian ricotta</h4>
+                                    <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
+                                </div>
+                                <p class="dish-price">£17</p>
+                            </div>
+                            <div class="el"></div>
+                        </div>
+                    </div>
+                </section>
+                <nav id="mob-footer">
+                    <div id="footer-links">
+                        <div class="footer-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            <p>book</p>
+                        </div>
+                        <div class="footer-link">
+                            <i class="fas fa-grin-hearts"></i>
+                            <p>hits</p>
+                        </div>
+                        <div class="footer-link">
+                            <i class="fas fa-book-open"></i>
+                            <p>menu</p>
+                        </div>
                     </div>
                 </nav>
-                <div class="banner-content">
-                    <h1 class="restau-name">la bella vita</h1>
-                    <h2 class="subtitle">italian specialities</h2>
-                </div>
-                <div class="down-btn-mob">
-                    <p>down</p>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-            </section>
-            <section id="infos">
-                <div class="infos-content">
-                    <div class="reservations">
-                        <h3 class="infos-title">Reservations</h3>
-                        <p class="infos-txt">Call us now to book a table in our restaurant. Calls must be in the same day as reservation.</p>
-                        <a href="" class="gold-btn">book a table</a>
-                    </div>
-                    <div class="infos-pic-1 bg-pic"></div>
-                    <div class="infos-pic-2 bg-pic"></div>
-                    <div class="about">
-                        <h3 class="infos-title">About</h3>
-                        <p class="infos-txt">
-                            <strong>La Bella Vita</strong> is a fictitious restaurant I am creating here as a front-end personal practice. I chose the name in honour of these 3 years I learnt Italian in high-school with my brilliant teacher. It is also a reference to a very odd italian movie I invite you to check out someday.<br>
-                            This page has been created following the work of <strong>designer Virgil Pana</strong>. Please go look at his work on <a href="https://dribbble.com/shots/2052368-Faicco-s-Italian-Restaurant-Parallax" target="_blank">Dribble</a>. My name is <strong>Cecile</strong>, and I am front-end developer in London. If you like this page, please take a look at my projects on <a href="https://github.com/SoundOfSun?tab=repositories" target="_blank">Github</a>.
-                        </p>
-                    </div>                    
-                </div>
-            </section>
-            <section id="specialities"  class="bg-pic">
-                <div class="flex spec-title">
-                    <h2 class="subtitle">our specialities</h2>                   
-                </div>
-            </section>
-            <section id="specialities-grid">
-                <div class="spec-content">
-                    <div class="dish">
-                        <h3 class="spec-title">lasagna</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
-                        <p class="dish-price">from £15.40</p>
-                    </div>
-                    <div class="pic-2 bg-pic"></div>
-                    <div class="dish">
-                        <h3 class="spec-title">baricole</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
-                        <p class="dish-price">from £15.40</p>
-                    </div>
-                    <div class="pic-4 bg-pic"></div>
-                    <div class="pic-1 bg-pic"></div>
-                    <div class="dish">
-                        <h3 class="spec-title">eggplant<br> parmigiana</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
-                        <p class="dish-price">from £15.40</p>
-                    </div>
-                    <div class="pic-3 bg-pic"></div>
-                    <div class="dish">
-                        <h3 class="spec-title">spaghetti with<br> meatballs</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod</p>
-                        <p class="dish-price">from £15.40</p>
-                    </div>
-                </div>
-            </section>
-            <section id="meal-pic" class="bg-pic"></section>
-            <section id="menu">
-                <img src="assets/images/pizza.png" alt="pizza" id="pizza">
-                <img src="assets/images/pasta-dish.png" alt="pasta dish" id="pasta-dish">
-                <img src="assets/images/pasta-raw.png" alt="pasta raw" id="pasta-raw">
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <div class="menu-border">
-                            <h2>menu</h2>                           
-                        </div>
-                    </div>
-                    <h3 class="menu-cat">food & aperitives</h3>
-                    <div class="food flex">
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">pizza mexicana</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>                                
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">lasagna</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>                               
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">pizza quatro stagioni</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">lasagna napolitana</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">pizza quatro formagi</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">other lasagna</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">pizza carnivora</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                    </div>
-                    <h3 class="menu-cat">desserts</h3>
-                    <div class="desserts flex">
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">tiramisu</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">cannoli</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">pizelles</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">double choco biscotti</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el flex">
-                            <div>
-                                <h4 class="dish-name">sicilian ricotta</h4>
-                                <p class="dish-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt..........................</p>
-                            </div>
-                            <p class="dish-price">£17</p>
-                        </div>
-                        <div class="el"></div>
-                    </div>
-                </div>
-            </section>
-            <nav id="mob-footer">
-                <div id="footer-links">
-                    <div class="footer-link">
-                        <i class="fas fa-calendar-alt"></i>
-                        <p>book</p>
-                    </div>
-                    <div class="footer-link">
-                        <i class="fas fa-grin-hearts"></i>
-                        <p>hits</p>
-                    </div>
-                    <div class="footer-link">
-                        <i class="fas fa-book-open"></i>
-                        <p>menu</p>
-                    </div>
-                </div>
-            </nav>
+            </div>
 
             <!-- Boostrap Javascript -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

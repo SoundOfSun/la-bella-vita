@@ -9,18 +9,18 @@ section#menu {
     position: absolute;
     left: -20%;
     top: 20%;
-    height: 35vw;
+    height: 620px;
 }
 #pasta-dish {
     position: absolute;
     right: -15%;
-    height: 30vw;
+    height: 531px;
 }
 #pasta-raw {
     position: absolute;
     bottom: 10%;
     right: -10%;
-    height: 24vw;
+    height: 425px;
 }
 
 .menu-content {
@@ -41,7 +41,7 @@ section#menu {
         text-transform: capitalize;
         color: $d-grey;
         font-family: $logo-font;
-        font-size: 5vw;        
+        font-size: 90px;        
     }
 
     .menu-cat {
@@ -50,7 +50,7 @@ section#menu {
         color: $l-grey;
         letter-spacing: 1px;
         margin-bottom: 5%;
-        font-size: 2vw;
+        font-size: 36px;
         font-weight: 700;
     }
 }
@@ -75,26 +75,46 @@ section#menu {
         color: $d-grey;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 1.5vw;
+        font-size: 26px;
         font-weight: 700;
     }
 
     .dish-desc {
         color: $l-grey;
-        font-size: 1vw;
+        font-size: 18px;
     }
 
     .dish-price {
         font-family: $logo-font;
         color: $gold;
-        font-size: 2.5vw;
+        font-size: 42px;
         font-weight: 700;
         padding-top: 7%;
     }
 }
 
+/* Scaling between 480px and 1800px */
+@media (min-width: 601px) and (max-width: 1800px) {
+    .menu-content .menu-border h2 { font-size: 5vw; }
+    .menu-content .menu-cat { font-size: 2vw; }
+    .el .dish-name { font-size: 1.5vw; }
+    .el .dish-desc { font-size: 1vw; }
+    .el .dish-price { font-size: 2.5vw; }
+    #pasta-dish { height: 30vw; }
+    #pizza { height: 35vw; }
+    #pasta-raw { height: 24vw; }
+}
+
+/* Scaling between 320px and 600px */
+@media (min-width: 320px) and (max-width: 600px) {
+    #pasta-dish { height: 30vw; }
+    #pizza { height: 35vw; }
+    #pasta-raw { height: 24vw; }
+}
+
+
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
     #pasta-raw {
         bottom: 18%;
     }

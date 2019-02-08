@@ -1,6 +1,4 @@
-section#infos {
-    height: 40vw;
-}
+section#infos { position: relative;}
 
 .infos-content {
     background-color: $white;
@@ -20,13 +18,13 @@ section#infos {
         color: $d-grey;
         font-family: $logo-font;
         margin-bottom: 5%;
-        font-size: 3.5vw;
+        font-size: 62px;
     }
 
     .infos-txt {
         color: $l-grey;
         margin-bottom: 15%;
-        font-size: 1vw;
+        font-size: 16px;
     }
 }
 
@@ -46,6 +44,14 @@ section#infos {
 .infos-pic-2 {
     background-image: url('../images/inside.jpg');
     display: block;
+}
+
+/* Scaling on desktop */
+@media (min-width: 601px) and (max-width: 1800px) {
+    .reservations, .about { 
+        .infos-title { font-size: 3.5vw; }
+        .infos-txt { font-size: 1vw; }
+    }
 }
 
 /* Tablet (portrait and landscape) */
@@ -69,7 +75,7 @@ section#infos {
 }
 
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
     section#infos {
         height: auto;
     }

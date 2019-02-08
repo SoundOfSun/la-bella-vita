@@ -11,7 +11,7 @@ nav {
 
     p {
         font-family: $logo-font;
-        font-size: 3vw;
+        font-size: 48px;
         text-transform: capitalize;
 
         i {
@@ -43,7 +43,7 @@ nav {
     a {
         color: $white;
         transition: color 0.5s ease 0s;
-        font-size: 1.5vw;
+        font-size: 24px;
 
         &:link, &:hover, &:focus, &:active, &:visited {
             text-decoration: none;
@@ -60,8 +60,22 @@ nav {
     }
 }
 
+/* Scaling tablet / desktop : between 480px and 1800px */
+@media (min-width: 601px) and (max-width: 1800px) {
+    #menu-logo p { font-size: 3vw; }
+    .menu-link a { font-size: 1.5vw; }
+}
+
+/* Scaling mobile : between 320px and 600px */
+@media (min-width: 320px) and (max-width: 600px) {
+    nav { 
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
    .menu-link, #menu-logo {
        display: none;
    }

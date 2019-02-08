@@ -6,11 +6,12 @@
   background-repeat: no-repeat; }
 
 section#banner {
-  min-height: 100vh;
+  position: relative;
+  min-height: 1100px;
   background-image: linear-gradient(-225deg, rgba(120, 120, 120, 0.6) 0%, rgba(50, 50, 50, 0.6) 50%), url("../images/banner.jpeg"); }
 
 section#specialities {
-  height: 40vw;
+  height: 735px;
   background-image: linear-gradient(-225deg, rgba(120, 120, 120, 0.6) 0%, rgba(50, 50, 50, 0.6) 50%), url("../images/specialities.jpg");
   margin-top: -3%;
   text-align: center;
@@ -22,7 +23,7 @@ section#specialities {
     align-items: center; }
 
 section#meal-pic {
-  height: 40vw;
+  height: 735px;
   background-image: url("../images/meal-table.jpg");
   margin-top: -3%; }
 
@@ -37,13 +38,13 @@ section#meal-pic {
   .banner-content .restau-name {
     font-family: "Dancing Script", cursive;
     text-transform: capitalize;
-    font-size: 9vw; }
+    font-size: 170px; }
 
 .subtitle {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-weight: 700;
-  font-size: 4vw; }
+  font-size: 70px; }
 
 .menu-mob {
   display: none; }
@@ -51,12 +52,24 @@ section#meal-pic {
 .down-btn-mob {
   display: none; }
 
+/* Scaling tablet / desktop : between 480px and 1800px */
+@media (min-width: 601px) and (max-width: 1800px) {
+  .banner-content .restau-name {
+    font-size: 9vw; }
+
+  .subtitle {
+    font-size: 4vw; } }
+/* Scaling mobile : between 320px and 600px */
+@media (min-width: 320px) and (max-width: 600px) {
+  section#banner {
+    min-height: 530px;
+    position: relative; } }
 /* Tablet (portrait and landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   section#banner {
     min-height: 80vh; } }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .banner-content .restau-name {
     font-size: 3rem; }
   .banner-content .subtitle {
@@ -93,7 +106,7 @@ section#meal-pic {
   color: #b2997a;
   background-color: transparent;
   transition: all 0.5s ease 0s;
-  font-size: 1.3vw; }
+  font-size: 24px; }
   .gold-btn:link, .gold-btn:hover, .gold-btn:active, .gold-btn:focus, .gold-btn:visited {
     color: #b2997a;
     text-decoration: none; }
@@ -101,15 +114,15 @@ section#meal-pic {
     background-color: #b2997a;
     color: white; }
 
-/* Tablet (portrait and landscape) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+/* Scaling on desktop */
+@media (min-width: 601px) and (max-width: 1800px) {
   .gold-btn {
-    font-size: 0.8rem; } }
+    font-size: 1.3vw; } }
 #mob-footer {
   display: none; }
 
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #mob-footer {
     display: block;
     height: 10vh;
@@ -135,7 +148,7 @@ section#meal-pic {
         letter-spacing: 1px;
         font-size: 0.8rem; } }
 section#infos {
-  height: 40vw; }
+  position: relative; }
 
 .infos-content {
   background-color: white;
@@ -153,11 +166,11 @@ section#infos {
     color: #323232;
     font-family: "Dancing Script", cursive;
     margin-bottom: 5%;
-    font-size: 3.5vw; }
+    font-size: 62px; }
   .reservations .infos-txt, .about .infos-txt {
     color: #969696;
     margin-bottom: 15%;
-    font-size: 1vw; }
+    font-size: 16px; }
 
 .reservations {
   padding: 10%; }
@@ -173,6 +186,12 @@ section#infos {
   background-image: url("../images/inside.jpg");
   display: block; }
 
+/* Scaling on desktop */
+@media (min-width: 601px) and (max-width: 1800px) {
+  .reservations .infos-title, .about .infos-title {
+    font-size: 3.5vw; }
+  .reservations .infos-txt, .about .infos-txt {
+    font-size: 1vw; } }
 /* Tablet (portrait and landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   section#infos {
@@ -188,7 +207,7 @@ section#infos {
   .reservations {
     padding: 12%; } }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   section#infos {
     height: auto; }
 
@@ -232,18 +251,18 @@ section#menu {
   position: absolute;
   left: -20%;
   top: 20%;
-  height: 35vw; }
+  height: 620px; }
 
 #pasta-dish {
   position: absolute;
   right: -15%;
-  height: 30vw; }
+  height: 531px; }
 
 #pasta-raw {
   position: absolute;
   bottom: 10%;
   right: -10%;
-  height: 24vw; }
+  height: 425px; }
 
 .menu-content {
   width: 65%;
@@ -258,14 +277,14 @@ section#menu {
     text-transform: capitalize;
     color: #323232;
     font-family: "Dancing Script", cursive;
-    font-size: 5vw; }
+    font-size: 90px; }
   .menu-content .menu-cat {
     text-align: center;
     text-transform: uppercase;
     color: #969696;
     letter-spacing: 1px;
     margin-bottom: 5%;
-    font-size: 2vw;
+    font-size: 36px;
     font-weight: 700; }
 
 .food, .desserts {
@@ -285,20 +304,55 @@ section#menu {
     color: #323232;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1.5vw;
+    font-size: 26px;
     font-weight: 700; }
   .el .dish-desc {
     color: #969696;
-    font-size: 1vw; }
+    font-size: 18px; }
   .el .dish-price {
     font-family: "Dancing Script", cursive;
     color: #b2997a;
-    font-size: 2.5vw;
+    font-size: 42px;
     font-weight: 700;
     padding-top: 7%; }
 
+/* Scaling between 480px and 1800px */
+@media (min-width: 601px) and (max-width: 1800px) {
+  .menu-content .menu-border h2 {
+    font-size: 5vw; }
+
+  .menu-content .menu-cat {
+    font-size: 2vw; }
+
+  .el .dish-name {
+    font-size: 1.5vw; }
+
+  .el .dish-desc {
+    font-size: 1vw; }
+
+  .el .dish-price {
+    font-size: 2.5vw; }
+
+  #pasta-dish {
+    height: 30vw; }
+
+  #pizza {
+    height: 35vw; }
+
+  #pasta-raw {
+    height: 24vw; } }
+/* Scaling between 320px and 600px */
+@media (min-width: 320px) and (max-width: 600px) {
+  #pasta-dish {
+    height: 30vw; }
+
+  #pizza {
+    height: 35vw; }
+
+  #pasta-raw {
+    height: 24vw; } }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   #pasta-raw {
     bottom: 18%; }
 
@@ -335,7 +389,7 @@ nav {
   width: 22%; }
   #menu-logo p {
     font-family: "Dancing Script", cursive;
-    font-size: 3vw;
+    font-size: 48px;
     text-transform: capitalize; }
     #menu-logo p i {
       font-size: 2.5vw;
@@ -358,7 +412,7 @@ nav {
   .menu-link a {
     color: white;
     transition: color 0.5s ease 0s;
-    font-size: 1.5vw; }
+    font-size: 24px; }
     .menu-link a:link, .menu-link a:hover, .menu-link a:focus, .menu-link a:active, .menu-link a:visited {
       text-decoration: none; }
     .menu-link a:hover {
@@ -367,8 +421,20 @@ nav {
     color: #969696;
     margin: 0 1%; }
 
+/* Scaling tablet / desktop : between 480px and 1800px */
+@media (min-width: 601px) and (max-width: 1800px) {
+  #menu-logo p {
+    font-size: 3vw; }
+
+  .menu-link a {
+    font-size: 1.5vw; } }
+/* Scaling mobile : between 320px and 600px */
+@media (min-width: 320px) and (max-width: 600px) {
+  nav {
+    width: 90%;
+    margin: 0 auto; } }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .menu-link, #menu-logo {
     display: none; }
 
@@ -379,9 +445,6 @@ nav {
 
   #translations {
     margin-right: 2%; } }
-section#specialities-grid {
-  height: 40vw; }
-
 .spec-content {
   background-color: white;
   width: 75%;
@@ -391,6 +454,8 @@ section#specialities-grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%; }
+  .spec-content .dish:nth-child(6) .dish-price, .spec-content .dish:nth-child(8) .dish-price {
+    margin-top: 7%; }
 
 .dish {
   text-align: center;
@@ -401,17 +466,17 @@ section#specialities-grid {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.4vw;
+    font-size: 24px;
     margin: 12% 0; }
   .dish p {
     color: #969696;
-    font-size: 1vw; }
+    font-size: 18px; }
   .dish .dish-price {
     text-transform: uppercase;
     color: #b2997a;
     font-weight: 700;
     margin-top: 17%;
-    font-size: 1.3vw; }
+    font-size: 24px; }
 
 .pic-1 {
   background-image: url("../images/lasagna.jpg"); }
@@ -425,6 +490,16 @@ section#specialities-grid {
 .pic-4 {
   background-image: url("../images/spaghetti-meatballs.jpg"); }
 
+/* Scaling on desktop */
+@media (min-width: 601px) and (max-width: 1800px) {
+  .dish h3 {
+    font-size: 1.4vw; }
+
+  .dish p {
+    font-size: 1vw; }
+
+  .dish .dish-price {
+    font-size: 1.3vw; } }
 /* Tablet (portrait and landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   section#specialities-grid {
@@ -436,7 +511,7 @@ section#specialities-grid {
   .dish p {
     font-size: 1.5vw; } }
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   section#specialities-grid {
     height: auto; }
     section#specialities-grid div.dish:nth-child(1) {
@@ -478,5 +553,9 @@ body {
 
 p, ul, li {
   margin: 0; }
+
+.content-wrapper {
+  max-width: 1800px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=output.css.map */
